@@ -2,9 +2,9 @@ package rental_center_application.com.model;
 
 public class Lowestprice {
 
+
     Integer id;
     String imageurl;
-
 
     public Lowestprice(Integer id, String imageurl) {
         this.id = id;

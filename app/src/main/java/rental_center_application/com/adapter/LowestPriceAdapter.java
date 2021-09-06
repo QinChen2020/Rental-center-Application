@@ -1,49 +1,54 @@
 package rental_center_application.com.adapter;
 
-
 import android.content.Context;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-import java.util.Objects;
 
+import rental_center_application.com.R;
 import rental_center_application.com.model.Lowestprice;
 
-public class LowestPriceAdapter extends RecyclerView.Adapter<LowestPriceAdapter.LowestPriceViewHolder>{
+public class LowestPriceAdapter extends RecyclerView.Adapter<LowestPriceAdapter.LowestpriceViewHolder> {
+
     Context context;
-    List<Lowestprice> LowestPriceList;
+    List<Lowestprice> lowestpriceList;
 
     @NonNull
     @Override
-    public LowestPriceViewHolder onCreateViewHolder(@NonNull  viewGroup parent, int viewType) {
-        return null;
-    }
+    public LowestpriceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-    @NonNull
-    @Override
-    public LowestPriceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = layoutInflaten.from(context).inflate(R.layout.lowest_row_item, parent, false);
+        return new LowestpriceViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull LowestPriceViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull LowestpriceViewHolder holder, int position) {
 
+
+
+        holder.lowestImageView.setImageResource(Integer.parseInt(lowestpriceList.get(position).getImageurl()));
     }
 
     @Override
-    public int getItemCount (){
-        return LowestPriceList.();
+    public int getItemCount() {
+        //return lowestpriceList.size();
+        return 5;
     }
 
-    public static class LowestPriceViewHolder extends RecyclerView.ViewHolder {
+    public static class LowestpriceViewHolder extends RecyclerView.ViewHolder{
 
-        public LowestPriceViewHolder(@NonNull View itemView) {
-            super(Objects.requireNonNull(itemView));
 
+        ImageView lowestImageView;
+        public LowestpriceViewHolder(@NonNull View itemView) {
+
+            super(itemView);
+
+            lowestImageView = itemView.findViewById(R.id.lowestImage);
         }
     }
-
 }
