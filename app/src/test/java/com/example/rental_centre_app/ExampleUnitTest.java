@@ -1,4 +1,4 @@
-package rental_center_application.com;
+package com.example.rental_centre_app;
 
 import org.junit.Test;
 
