@@ -138,29 +138,29 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:layout_width="131dp"
-            android:layout_height="56dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/home" />
 
         <ImageView
-            android:layout_width="92dp"
-            android:layout_height="match_parent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             app:srcCompat="@drawable/profileicon" />
 
         <ImageView
-            android:layout_width="94dp"
-            android:layout_height="match_parent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             app:srcCompat="@drawable/key" />
 
         <ImageView
-            android:layout_width="117dp"
-            android:layout_height="match_parent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             app:srcCompat="@drawable/scenicarea_icon" />
