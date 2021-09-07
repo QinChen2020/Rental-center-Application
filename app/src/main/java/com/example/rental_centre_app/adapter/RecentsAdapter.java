@@ -17,6 +17,12 @@ import java.util.List;
 
 public class RecentsAdapter extends RecyclerView.Adapter <RecentsAdapter.RecentsViewHolder>{
 
+
+    public RecentsAdapter(Context context, List<RecentsData> recentsDataList) {
+        this.context = context;
+        this.recentsDataList = recentsDataList;
+    }
+
     Context context;
     List<RecentsData> recentsDataList;
 
@@ -32,6 +38,11 @@ public class RecentsAdapter extends RecyclerView.Adapter <RecentsAdapter.Recents
 
     @Override
     public void onBindViewHolder(@NonNull RecentsViewHolder holder, int position) {
+
+        holder.locationName.setText(recentsDataList.get(position).getLocationName());
+        holder.houseName.setText(recentsDataList.get(position).getHouseName());
+        holder.price.setText(recentsDataList.get(position).getPrice());
+        holder.houseImage.setImageResource(recentsDataList.get(position).getImageUrl());
 
     }
 

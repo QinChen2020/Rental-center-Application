@@ -5,11 +5,21 @@ public class RecentsData {
     String houseName;
     String locationName;
     String price;
+    Integer imageUrl;
 
-    public RecentsData(String houseName, String locationName, String price) {
+    public Integer getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(Integer imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public RecentsData(String houseName, String locationName, String price, Integer imageUrl) {
         this.houseName = houseName;
         this.locationName = locationName;
         this.price = price;
+        this.imageUrl = imageUrl;
     }
 
     public String getHouseName() {
