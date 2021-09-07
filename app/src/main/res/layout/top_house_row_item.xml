@@ -2,21 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="180dp"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
     android:background="@drawable/card_bg">
 
 
     <ImageView
         android:id="@+id/house_image"
-        android:layout_width="187dp"
-        android:layout_height="172dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="142dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
         android:adjustViewBounds="true"
+        android:paddingStart="2dp"
+        android:paddingRight="8dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/recentimage1" />
@@ -29,18 +29,17 @@
         android:layout_marginTop="10dp"
         android:autoText="false"
         android:text="Omaha ,4 bedrooms"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/house_image" />
+        app:layout_constraintStart_toEndOf="@+id/house_image"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/location_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text=" 8 Taiawa place, Omaha,  Rodney, Auckland"
+        android:text="8 Taiawa place, Omaha, \nRodney, Auckland"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/house_name"
         app:layout_constraintTop_toBottomOf="@+id/house_name" />
 
     <TextView
@@ -50,10 +49,19 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="Per Week $500"
-        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/location_name"
         app:layout_constraintTop_toBottomOf="@+id/location_name"
         app:layout_constraintVertical_bias="0.017" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="80dp"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
