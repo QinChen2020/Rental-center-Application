@@ -78,6 +78,6 @@ public class MainActivity extends AppCompatActivity {
             topHouseRecycler.setLayoutManager(layoutManager);
             topHouseAdapter = new TopHouseAdapter(this, topHouseDataList);
             topHouseRecycler.setAdapter(topHouseAdapter);
-
+        //update
         }
 }
