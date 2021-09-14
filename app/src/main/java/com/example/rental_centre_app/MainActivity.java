@@ -13,7 +13,6 @@ import com.example.rental_centre_app.model.TopHouseData;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.RecursiveAction;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,26 +58,26 @@ public class MainActivity extends AppCompatActivity {
 
 
         setTopHouseRecycler(topHouseDataList);
-        }
+    }
 
-        private void setRecentRecycler(List<RecentsData> recentsDataList){
+    private void setRecentRecycler(List<RecentsData> recentsDataList){
 
-            recentRecycler = findViewById(R.id.recent_cecycler);
-            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
-            recentRecycler.setLayoutManager(layoutManager);
-            recentsAdapter = new RecentsAdapter(this, recentsDataList);
-            recentRecycler.setAdapter(recentsAdapter);
+        recentRecycler = findViewById(R.id.recent_cecycler);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
+        recentRecycler.setLayoutManager(layoutManager);
+        recentsAdapter = new RecentsAdapter(this, recentsDataList);
+        recentRecycler.setAdapter(recentsAdapter);
 
-        }
+    }
 
-        private void setTopHouseRecycler(List<TopHouseData> topHouseDataList){
+    private void setTopHouseRecycler(List<TopHouseData> topHouseDataList){
 
-            topHouseRecycler = findViewById(R.id.top_house_recycler);
-            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
-            topHouseRecycler.setLayoutManager(layoutManager);
-            topHouseAdapter = new TopHouseAdapter(this, topHouseDataList);
-            topHouseRecycler.setAdapter(topHouseAdapter);
+        topHouseRecycler = findViewById(R.id.top_house_recycler);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        topHouseRecycler.setLayoutManager(layoutManager);
+        topHouseAdapter = new TopHouseAdapter(this, topHouseDataList);
+        topHouseRecycler.setAdapter(topHouseAdapter);
         //update
-        }
+    }
 }
 
