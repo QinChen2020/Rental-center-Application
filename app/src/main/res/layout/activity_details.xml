@@ -170,7 +170,7 @@
         app:srcCompat="@drawable/like" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bookbutton"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
