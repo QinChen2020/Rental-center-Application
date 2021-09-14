@@ -13,17 +13,33 @@ import com.example.rental_centre_app.model.Payment;
 public class DetailsActivity extends AppCompatActivity {
 
     Button bookbutton;
+    Button backbutton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         bookbutton = findViewById(R.id.bookbutton);
+        backbutton = findViewById(R.id.backbutton);
+
         bookbutton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(DetailsActivity.this, Payment.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailsActivity.this, Payment.class);
                 startActivity(intent);
             }
-        });
+            });
+             backbutton.setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View v) {
+
+                     Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
+                     startActivity(intent);
+
+                 }
+             });
+
+
+
     }
 }
