@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:textAllCaps="false"
+    tools:context=".Login_Page">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG IN HERE"
+        android:gravity="center"
+        android:background="#dd99ff"
+        android:textColor="#656600"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editText_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="user name"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:padding="20dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="30dp"
+        android:inputType="textPassword"
+        android:padding="20dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="30dp">
+
+    </Button>
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/img"
+
+        android:layout_marginLeft="10dp">
+
+    </Button>
+
+
+</LinearLayout>
+
