@@ -40,5 +40,8 @@ dependencies {
     //noinspection GradleCompatible,GradleCompatible
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha01'
+    androidTestImplementation 'androidx.test:rules:1.4.1-alpha01'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.0-alpha01'
 
 }
