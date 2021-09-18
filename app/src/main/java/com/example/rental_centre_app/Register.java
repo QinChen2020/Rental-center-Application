@@ -65,7 +65,7 @@ public class Register extends AppCompatActivity {
                             }
                         }
                     }).start();
-                    intent = new Intent(Register.this, MainActivity.class);
+                    intent = new Intent(Register.this, Register_successful.class);
                     break;
                 case R.id.return_button:
                     intent = new Intent(Register.this, MainActivity.class);

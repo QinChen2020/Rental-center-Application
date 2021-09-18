@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.Payment_method">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PAYMENT METHOD"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:background="#dd99ff"
+        android:textColor="#656600"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="All transactions are safe and secure."
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000"
+        android:layout_below="@+id/textView_1"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/existing_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use an existing card"
+        android:textSize="18dp"
+        android:layout_below="@+id/textView_2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000"
+        android:layout_below="@+id/existing_card"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/textView_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit/Debit Card"
+        android:textSize="25dp"
+        android:layout_below="@id/textView_3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number*"
+        android:textSize="20dp"
+        android:layout_below="@id/textView_5"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="number"/>
+
+    <ImageView
+        android:id="@+id/card"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/card_number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Name On Card*"
+        android:textSize="20dp"
+        android:layout_below="@id/card"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/expiry_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="  MM/YY*"
+        android:textSize="20dp"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/textView_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expiry_date"
+        android:layout_marginLeft="22dp"
+        android:text="Card expiry date"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="  CVV*"
+        android:inputType="number"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/question"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView_4"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/cvv"
+        android:background="@drawable/question_mark" />
+
+    <TextView
+        android:id="@+id/question_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The CVV code is a 3 digit code that we ask you to enter. It adds and extra level of security to your payment."
+        android:layout_below="@+id/question"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
