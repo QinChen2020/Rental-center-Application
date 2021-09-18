@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.rental_centre_app.utils.Payment_method;
 
 
 public class DetailsActivity extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class DetailsActivity extends AppCompatActivity {
         bookbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailsActivity.this, Payment.class);
+                Intent intent = new Intent(DetailsActivity.this, Payment_method.class);
                 startActivity(intent);
             }
             });
