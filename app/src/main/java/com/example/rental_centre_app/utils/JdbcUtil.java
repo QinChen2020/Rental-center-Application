@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class JdbcUtil {
     private static final String driver = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://192.168.68.103:3306/rentalapp/test?characterEncoding=utf-8";
-    private static final String USER = "root";
-    private static final String PSWD = "php980825";
+    private static final String URL = "jdbc:mysql://192.168.68.103:3306/rentalapp";
+    private static final String USER = "local";
+    private static final String PSWD = "123456";
 
     public static Connection getConnection() {
         Connection conn = null;
