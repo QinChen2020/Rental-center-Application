@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.rental_centre_app.utils.Payment_method;
-
 
 public class DetailsActivity extends AppCompatActivity {
 

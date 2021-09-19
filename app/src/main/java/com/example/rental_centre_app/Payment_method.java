@@ -1,4 +1,4 @@
-package com.example.rental_centre_app.utils;
+package com.example.rental_centre_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,8 +19,9 @@ public class Payment_method extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_method);
-        existing_card.findViewById(R.id.existing_card);
-        question.findViewById(R.id.question);
+        existing_card = findViewById(R.id.existing_card);
+        question = findViewById(R.id.question);
+        cvv_explain = findViewById(R.id.question_explain);
         setListeners();
     }
 
@@ -40,6 +41,7 @@ public class Payment_method extends AppCompatActivity {
                     break;
                 case R.id.question:
                     cvv_explain.setVisibility(View.VISIBLE);
+                    intent = new Intent(Payment_method.this, Payment_method.class);
                     break;
             }
             startActivity(intent);
