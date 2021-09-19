@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:background="#dd99ff"
+        android:textColor="#656600"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/iv_personal_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/profile_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/default_personal_image"/>
+    <TextView
+        android:id="@+id/p_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_title"
+        android:layout_toRightOf="@id/iv_personal_icon"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/p_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Settings"
+        android:layout_below="@id/iv_personal_icon"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+    
+    <Button
+        android:id="@+id/btn_PI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:layout_below="@id/p_account"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_PP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment and Payouts"
+        android:layout_below="@id/btn_PI"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:layout_below="@id/btn_PP"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/return_btn"
+        android:layout_below="@id/btn_No"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+
+</RelativeLayout>

@@ -1,7 +1,11 @@
 package com.example.rental_centre_app;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,9 +21,10 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
 
-    RecyclerView recentRecycler,topHouseRecycler;
-    RecentsAdapter recentsAdapter;
-    TopHouseAdapter topHouseAdapter;
+    private RecyclerView recentRecycler,topHouseRecycler;
+    private RecentsAdapter recentsAdapter;
+    private TopHouseAdapter topHouseAdapter;
+    private ImageView profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         setTopHouseRecycler(topHouseDataList);
+
+        profile = (ImageView) findViewById(R.id.img_profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Profile.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setRecentRecycler(List<RecentsData> recentsDataList){

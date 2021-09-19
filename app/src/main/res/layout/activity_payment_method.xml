@@ -72,13 +72,13 @@
         android:id="@+id/card_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Card Number*"
-        android:textSize="20dp"
         android:layout_below="@id/textView_5"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
-        android:inputType="number"/>
+        android:hint="Card Number*"
+        android:inputType="number"
+        android:textSize="20dp" />
 
     <ImageView
         android:id="@+id/card"
@@ -93,13 +93,13 @@
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="  Name On Card*"
-        android:textSize="20dp"
         android:layout_below="@id/card"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:inputType="textPersonName"/>
+        android:layout_marginRight="10dp"
+        android:hint="  Name On Card*"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/expiry_date"
