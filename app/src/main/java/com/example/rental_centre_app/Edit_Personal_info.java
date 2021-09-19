@@ -3,6 +3,7 @@ package com.example.rental_centre_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,20 +15,24 @@ import java.util.GregorianCalendar;
 
 public class Edit_Personal_info extends AppCompatActivity {
     private Button birthday;
+    private Button return_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_personal_info);
         birthday = (Button) findViewById(R.id.edit_birthday);
+        return_button = (Button) findViewById(R.id.return_button);
         setListeners();
     }
 
     private void setListeners(){
         Onclick onclick = new Onclick();
         birthday.setOnClickListener(onclick);
+        return_button.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
+        Intent intent = null;
         Calendar calendar = Calendar.getInstance();
         @Override
         public void onClick(View view) {
@@ -41,7 +46,11 @@ public class Edit_Personal_info extends AppCompatActivity {
                         }
                     },calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH));
                     datePickerDialog.show();
+
+                case R.id.return_button:
+                    intent = new Intent(Edit_Personal_info.this, Profile.class);
             }
+            startActivity(intent);
         }
     }
 }

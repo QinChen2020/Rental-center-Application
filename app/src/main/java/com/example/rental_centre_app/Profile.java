@@ -10,18 +10,21 @@ import android.widget.Button;
 public class Profile extends AppCompatActivity {
 
     private Button returnBtn;
+    private Button personal_info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         returnBtn = (Button)findViewById(R.id.btn_return);
+        personal_info = (Button)findViewById(R.id.btn_PI);
         setListeners();
     }
 
     private void setListeners(){
         Onclick onclick = new Onclick();
         returnBtn.setOnClickListener(onclick);
+        personal_info.setOnClickListener(onclick);
     }
     private class Onclick implements View.OnClickListener {
 
@@ -31,6 +34,9 @@ public class Profile extends AppCompatActivity {
             switch (view.getId()) {
                 case R.id.btn_return:
                     intent = new Intent(Profile.this, MainActivity.class);
+                    break;
+                case R.id.btn_PI:
+                    intent = new Intent(Profile.this, Edit_Personal_info.class);
                     break;
             }
             startActivity(intent);

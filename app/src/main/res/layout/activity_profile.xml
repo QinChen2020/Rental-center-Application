@@ -47,16 +47,16 @@
         android:textSize="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"/>
-    
+
     <Button
         android:id="@+id/btn_PI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Personal Information"
         android:layout_below="@id/p_account"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/white"
-        android:layout_marginLeft="10dp"/>
+        android:text="Personal Information" />
 
     <Button
         android:id="@+id/btn_PP"
