@@ -31,7 +31,7 @@ public class Login_Page extends AppCompatActivity {
             Intent intent = null;
             switch (view.getId()){
                 case R.id.login_button:
-                    intent = new Intent(Login_Page.this, MainActivity.class);
+                    intent = new Intent(Login_Page.this,MainActivity.class);
                     break;
                 case R.id.return_button:
                     intent = new Intent(Login_Page.this, MainPageActivity.class);

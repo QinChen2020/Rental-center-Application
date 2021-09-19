@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RentalCentreAPP">
         <activity
+            android:name=".Edit_Personal_info"
+            android:exported="true" />
+        <activity
             android:name=".Payment_method"
             android:exported="true" />
         <activity
