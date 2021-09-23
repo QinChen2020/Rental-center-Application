@@ -11,6 +11,7 @@ public class Profile extends AppCompatActivity {
 
     private Button returnBtn;
     private Button personal_info;
+    private Button payment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         returnBtn = (Button)findViewById(R.id.btn_return);
         personal_info = (Button)findViewById(R.id.btn_PI);
+        payment = (Button)findViewById(R.id.btn_PP);
         setListeners();
     }
 
@@ -25,6 +27,7 @@ public class Profile extends AppCompatActivity {
         Onclick onclick = new Onclick();
         returnBtn.setOnClickListener(onclick);
         personal_info.setOnClickListener(onclick);
+        payment.setOnClickListener(onclick);
     }
     private class Onclick implements View.OnClickListener {
 
@@ -38,6 +41,8 @@ public class Profile extends AppCompatActivity {
                 case R.id.btn_PI:
                     intent = new Intent(Profile.this, Edit_Personal_info.class);
                     break;
+                case R.id.btn_PP:
+                    intent = new Intent(Profile.this, Edit_card_info.class);
             }
             startActivity(intent);
         }

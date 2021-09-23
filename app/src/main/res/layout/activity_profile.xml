@@ -62,11 +62,11 @@
         android:id="@+id/btn_PP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Payment and Payouts"
         android:layout_below="@id/btn_PI"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/white"
-        android:layout_marginLeft="10dp"/>
+        android:text="Payment and Payouts" />
 
     <Button
         android:id="@+id/btn_No"
