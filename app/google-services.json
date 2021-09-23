@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "306249842873",
+    "project_id": "rental-centre-app",
+    "storage_bucket": "rental-centre-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306249842873:android:8f8cb20abc02e18fff5b68",
+        "android_client_info": {
+          "package_name": "com.example.rental_centre_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306249842873-qq08o164rjtnc8us80dr0gl1521jaouc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMwSJl0epYO0U39Blx9-BLXFSB1xnh7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306249842873-qq08o164rjtnc8us80dr0gl1521jaouc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
