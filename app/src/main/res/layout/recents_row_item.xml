@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/house_image1"
+        android:id="@+id/house_image"
         android:layout_width="187dp"
         android:layout_height="172dp"
         android:layout_marginStart="16dp"
