@@ -12,15 +12,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-import com.example.rental_centre_app.utils.JdbcUtil;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+
 
 public class Register extends AppCompatActivity {
 
@@ -59,8 +56,10 @@ public class Register extends AppCompatActivity {
                     String txt_password = password.getText().toString();
                     if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
                         Toast.makeText(Register.this,"Empty credentials!", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(Register.this,Register.class);
                     }else if (txt_password.length() < 6) {
                         Toast.makeText(Register.this,"Password too short!", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(Register.this,Register.class);
                     } else {
                         registerUser(txt_email, txt_password);
                         intent = new Intent(Register.this, Register_successful.class);
