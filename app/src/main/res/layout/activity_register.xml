@@ -22,10 +22,10 @@
     </TextView>
 
     <EditText
-        android:id="@+id/editText_username"
+        android:id="@+id/editText_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="user name"
+        android:hint="email"
         android:textSize="30dp"
         android:inputType="text"
         android:padding="20dp">
