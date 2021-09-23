@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ADD A NEW PAYOUT METHOD"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:gravity="center"
         android:background="#dd99ff"
         android:textColor="#656600"

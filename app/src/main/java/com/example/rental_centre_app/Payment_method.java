@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.rental_centre_app.R;
 
@@ -40,7 +41,7 @@ public class Payment_method extends AppCompatActivity {
                 case R.id.existing_card:
                     break;
                 case R.id.question:
-                    cvv_explain.setVisibility(View.VISIBLE);
+                    Toast.makeText(getApplicationContext(),"The CVV code is a 3 digit code that we ask you to enter. It adds and extra level of security to your payment.", Toast.LENGTH_LONG).show();
                     intent = new Intent(Payment_method.this, Payment_method.class);
                     break;
             }

@@ -62,7 +62,8 @@ public class Register extends AppCompatActivity {
                         intent = new Intent(Register.this,Register.class);
                     } else {
                         registerUser(txt_email, txt_password);
-                        intent = new Intent(Register.this, Register_successful.class);
+                        Toast.makeText(Register.this, "Register successful!", Toast.LENGTH_LONG).show();
+                        intent = new Intent(Register.this, Login_Page.class);
                     }
                     break;
                 case R.id.return_button:

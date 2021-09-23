@@ -11,8 +11,8 @@ import android.widget.Button;
 
 public class DetailsActivity extends AppCompatActivity {
 
-    Button bookbutton;
-    Button backbutton;
+    private Button bookbutton;
+    private Button backbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -44,7 +45,8 @@ public class Add_new_card extends AppCompatActivity {
                 case R.id.add:
                     break;
                 case R.id.question:
-                    cvv_explain.setVisibility(View.VISIBLE);
+                    Toast.makeText(getApplicationContext(),"The CVV code is a 3 digit code that we ask you to enter. It adds and extra level of security to your payment.", Toast.LENGTH_LONG).show();
+                    intent = new Intent(Add_new_card.this, Add_new_card.class);
                     break;
             }
             startActivity(intent);
