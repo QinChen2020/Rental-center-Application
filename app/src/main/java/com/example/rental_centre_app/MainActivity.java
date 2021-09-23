@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private RecentsAdapter recentsAdapter;
     private TopHouseAdapter topHouseAdapter;
     private ImageView profile;
+    private ImageView key;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+                key = (ImageView) findViewById(R.id.img_key);
+                key.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, calculator.class);
+                        startActivity(intent);
+            }
+        });
     }
 
     private void setRecentRecycler(List<RecentsData> recentsDataList){
@@ -92,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
         topHouseAdapter = new TopHouseAdapter(this, topHouseDataList);
         topHouseRecycler.setAdapter(topHouseAdapter);
         //update
+
+
     }
 }
 

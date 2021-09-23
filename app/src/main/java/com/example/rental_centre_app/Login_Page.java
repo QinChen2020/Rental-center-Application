@@ -15,7 +15,7 @@ public class Login_Page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
-        login = (Button)findViewById(R.id.login_button);
+        login = findViewById(R.id.login_button);
         return_button = (Button)findViewById(R.id.return_button);
         setListeners();
     }
@@ -36,6 +36,8 @@ public class Login_Page extends AppCompatActivity {
                 case R.id.return_button:
                     intent = new Intent(Login_Page.this, MainPageActivity.class);
                     break;
+
+
             }
             startActivity(intent);
         }

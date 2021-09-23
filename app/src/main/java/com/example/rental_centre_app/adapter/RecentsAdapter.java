@@ -47,6 +47,7 @@ public class RecentsAdapter extends RecyclerView.Adapter <RecentsAdapter.Recents
         holder.houseImage.setImageResource(recentsDataList.get(position).getImageUrl());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(context, DetailsActivity.class);
