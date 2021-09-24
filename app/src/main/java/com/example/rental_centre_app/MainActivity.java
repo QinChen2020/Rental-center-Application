@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private RecentsAdapter recentsAdapter;
     private TopHouseAdapter topHouseAdapter;
     private ImageView profile;
+    private ImageView key;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,31 +37,25 @@ public class MainActivity extends AppCompatActivity {
         List<RecentsData> recentsDataList = new ArrayList<>();
         recentsDataList.add(new RecentsData("Omaha,4 bedrooms", "8 Taiawa place,Omaha,Rodney,Auckland", "Per Week $500",R.drawable.recentimage1));
         recentsDataList.add(new RecentsData("Claudelands, 1 bedroom", "6 Boundary Road, Claudelands, Hamilton", "Per Week $450",R.drawable.recentimage2));
-        recentsDataList.add(new RecentsData("Omaha,4 bedrooms", "8 Taiawa place,Omaha,Rodney,Auckland", "Per Week $500",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Claudelands, 1 bedroom", "6 Boundary Road, Claudelands, Hamilton", "Per Week $450",R.drawable.recentimage2));
-        recentsDataList.add(new RecentsData("Omaha,4 bedrooms", "8 Taiawa place,Omaha,Rodney,Auckland", "Per Week $500",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Claudelands, 1 bedroom", "6 Boundary Road, Claudelands, Hamilton", "Per Week $450",R.drawable.recentimage2));
-        recentsDataList.add(new RecentsData("Omaha,4 bedrooms", "8 Taiawa place,Omaha,Rodney,Auckland", "Per Week $500",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Claudelands, 1 bedroom", "6 Boundary Road, Claudelands, Hamilton", "Per Week $450",R.drawable.recentimage2));
-        recentsDataList.add(new RecentsData("Omaha,4 bedrooms", "8 Taiawa place,Omaha,Rodney,Auckland", "Per Week $500",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Claudelands, 1 bedroom", "6 Boundary Road, Claudelands, Hamilton", "Per Week $450",R.drawable.recentimage2));
-        recentsDataList.add(new RecentsData("Omaha,4 bedrooms", "8 Taiawa place,Omaha,Rodney,Auckland", "Per Week $500",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Claudelands, 1 bedroom", "6 Boundary Road, Claudelands, Hamilton", "Per Week $450",R.drawable.recentimage2));
+        recentsDataList.add(new RecentsData("Ashburton,3 bedrooms", "34 Ashbury Grove,Ashburton,Canterbury", "Per Week $600",R.drawable.recentimage3));
+        recentsDataList.add(new RecentsData("Newtown,2 bedroom", "120 Owen Street, Newtown,Wellington", "Per Week $480",R.drawable.recentimage4));
+        recentsDataList.add(new RecentsData("Feilding,5 bedrooms", "71 Derby Street, Feilding, Manawatu, Manawatu", "Per Week $500",R.drawable.recentimage5));
+        recentsDataList.add(new RecentsData("Henderson,3 bedroom", "76H Edmonton Road, Henderson,Auckland", "Per Week $550",R.drawable.recentimage6));
+        recentsDataList.add(new RecentsData("Papakura,2 bedrooms", "34a Kelvin Road, Papakura, Auckland", "Per Week $500",R.drawable.recentimage7));
+        recentsDataList.add(new RecentsData("Henderson,4 bedroom", "147a Rathgar Road, Henderson,Auckland", "Per Week $600",R.drawable.recentimage8));
+
+
 
 
         setRecentRecycler(recentsDataList);
 
         List<TopHouseData> topHouseDataList = new ArrayList<>();
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
-        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $600",R.drawable.tophouse));
+        topHouseDataList.add(new TopHouseData("Spotswood, 3 bedrooms","40 Hobart Drive, Spotswood, New Plymouth", "Per Week $550",R.drawable.tophouse));
+        topHouseDataList.add(new TopHouseData("Upper Riccarton, 2 bedrooms","68C Peer Street, Upper Riccarton, Christchurch City", "Per Week $450",R.drawable.tophouse1));
+        topHouseDataList.add(new TopHouseData("Rodney, 4 bedrooms","9 Tapu Road, Huapai, Rodney, Auckland", "Per Week $650",R.drawable.tophouse2));
+        topHouseDataList.add(new TopHouseData("Wharewaka, 3 bedrooms","2 Harakeke Drive, Wharewaka, Taupo, Waikato", "Per Week $600",R.drawable.tophouse3));
+        topHouseDataList.add(new TopHouseData("Papatoetoe, 5 bedrooms","88 Hillcrest Road, Papatoetoe, Manukau City, Auckland", "Per Week $500",R.drawable.tophouse4));
+
 
 
         setTopHouseRecycler(topHouseDataList);
@@ -70,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Profile.class);
                 startActivity(intent);
+            }
+        });
+
+                key = (ImageView) findViewById(R.id.img_key);
+                key.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, calculator.class);
+                        startActivity(intent);
             }
         });
     }
@@ -92,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
         topHouseAdapter = new TopHouseAdapter(this, topHouseDataList);
         topHouseRecycler.setAdapter(topHouseAdapter);
         //update
+
+
     }
 }
 
