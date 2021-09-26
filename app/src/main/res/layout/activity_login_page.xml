@@ -22,17 +22,17 @@
     </TextView>
 
     <EditText
-        android:id="@+id/editText_1"
+        android:id="@+id/login_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="email"
         android:textSize="30dp"
-        android:inputType="number"
+        android:inputType="text"
         android:padding="20dp">
     </EditText>
 
     <EditText
-        android:id="@+id/editText_2"
+        android:id="@+id/login_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="password"
