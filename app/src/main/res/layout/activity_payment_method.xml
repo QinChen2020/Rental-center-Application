@@ -134,7 +134,7 @@
         android:textSize="20dp"/>
 
     <Button
-        android:id="@+id/question"
+        android:id="@+id/question_mark"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@+id/textView_4"
@@ -143,15 +143,14 @@
         android:layout_toRightOf="@+id/cvv"
         android:background="@drawable/question_mark" />
 
-    <TextView
-        android:id="@+id/question_explain"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The CVV code is a 3 digit code that we ask you to enter. It adds and extra level of security to your payment."
-        android:layout_below="@+id/question"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"/>
+        android:text="PAY"
+        android:textSize="25dp"
+        android:layout_below="@+id/question_mark"
+        android:layout_marginTop="10dp"/>
+
 
 </RelativeLayout>

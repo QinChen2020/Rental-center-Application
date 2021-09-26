@@ -56,21 +56,21 @@ public class Register extends AppCompatActivity {
                     String txt_password = password.getText().toString();
                     if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
                         Toast.makeText(Register.this,"Empty credentials!", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(Register.this,Register.class);
                     }else if (txt_password.length() < 6) {
                         Toast.makeText(Register.this,"Password too short!", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(Register.this,Register.class);
                     } else {
                         registerUser(txt_email, txt_password);
                         Toast.makeText(Register.this, "Register successful!", Toast.LENGTH_LONG).show();
                         intent = new Intent(Register.this, Login_Page.class);
+                        startActivity(intent);
                     }
                     break;
                 case R.id.return_button:
                     intent = new Intent(Register.this, MainPageActivity.class);
+                    startActivity(intent);
                     break;
             }
-            startActivity(intent);
+
         }
     }
 
