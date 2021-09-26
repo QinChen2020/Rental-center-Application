@@ -15,6 +15,7 @@ import java.util.Calendar;
 public class Edit_Personal_info extends AppCompatActivity {
     private Button birthday;
     private Button return_button;
+    private Button save_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         setContentView(R.layout.activity_edit_personal_info);
         birthday = (Button) findViewById(R.id.edit_birthday);
         return_button = (Button) findViewById(R.id.return_button);
+        save_button = (Button)findViewById(R.id.save_button);
         setListeners();
     }
 
@@ -29,6 +31,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         Onclick onclick = new Onclick();
         birthday.setOnClickListener(onclick);
         return_button.setOnClickListener(onclick);
+        save_button.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener {
@@ -47,11 +50,10 @@ public class Edit_Personal_info extends AppCompatActivity {
             } else if (view.getId() == R.id.return_button) {
                 intent = new Intent(Edit_Personal_info.this, Profile.class);
                 startActivity(intent);
-            }else if (view.getId() == R.id.save_button){
+            }else if (view.getId() == R.id.save_button) {
                 toast = Toast.makeText(Edit_Personal_info.this, "saved!", Toast.LENGTH_LONG);
                 toast.show();
             }
-
         }
     }
 }
