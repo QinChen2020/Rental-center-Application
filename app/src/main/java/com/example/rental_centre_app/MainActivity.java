@@ -14,6 +14,7 @@ import com.example.rental_centre_app.adapter.RecentsAdapter;
 import com.example.rental_centre_app.adapter.TopHouseAdapter;
 import com.example.rental_centre_app.model.RecentsData;
 import com.example.rental_centre_app.model.TopHouseData;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
