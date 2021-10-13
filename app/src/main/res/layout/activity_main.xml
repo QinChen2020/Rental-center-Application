@@ -137,13 +137,12 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/profileicon" />
 
-        <ImageView
-            android:id="@+id/img_key"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
+        <Button
+            android:id="@+id/buttonc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/key" />
+            android:text="Rent calculator" />
 
     </LinearLayout>
 

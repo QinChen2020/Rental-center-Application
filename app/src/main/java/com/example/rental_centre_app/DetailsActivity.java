@@ -24,7 +24,7 @@ public class DetailsActivity extends AppCompatActivity {
         bookbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailsActivity.this, Payment_method.class);
+                Intent intent = new Intent(DetailsActivity.this,Payment_method.class);
                 startActivity(intent);
             }
             });

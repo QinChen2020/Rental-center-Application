@@ -4,6 +4,7 @@ package com.example.rental_centre_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private TopHouseAdapter topHouseAdapter;
     private ImageView profile;
     private ImageView key;
+    private Button buttonc;
 
 
     @Override
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         setTopHouseRecycler(topHouseDataList);
 
         profile = (ImageView) findViewById(R.id.img_profile);
+
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,15 +72,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-                key = (ImageView) findViewById(R.id.img_key);
-                key.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(MainActivity.this, calculator.class);
-                        startActivity(intent);
+        buttonc = findViewById(R.id.buttonc);
+        buttonc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Calculator.class);
+                startActivity(intent);
             }
         });
+
     }
 
     private void setRecentRecycler(List<RecentsData> recentsDataList){
