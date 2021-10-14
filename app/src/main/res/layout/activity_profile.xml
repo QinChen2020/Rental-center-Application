@@ -10,12 +10,12 @@
         android:id="@+id/profile_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Profile"
-        android:textSize="40dp"
-        android:gravity="center"
         android:background="#dd99ff"
+        android:gravity="center"
+        android:text="Profile"
         android:textColor="#656600"
-        android:textStyle="bold"/>
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
 
     <ImageView
@@ -42,11 +42,11 @@
         android:id="@+id/p_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Account Settings"
         android:layout_below="@id/iv_personal_icon"
-        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"/>
+        android:text="Account Settings"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/btn_PI"
@@ -69,14 +69,24 @@
         android:text="Payment and Payouts" />
 
     <Button
+        android:id="@+id/btn_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_PP"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="My Order" />
+
+    <Button
         android:id="@+id/btn_No"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notifications"
-        android:layout_below="@id/btn_PP"
+        android:layout_below="@id/btn_order"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/white"
-        android:layout_marginLeft="10dp"/>
+        android:text="Notifications" />
 
     <Button
         android:id="@+id/btn_return"

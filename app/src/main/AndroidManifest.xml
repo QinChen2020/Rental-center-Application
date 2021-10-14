@@ -19,11 +19,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RentalCentreAPP">
         <activity
+            android:name=".Order"
+            android:exported="true" />
+        <activity
             android:name=".Add_new_card"
             android:exported="true" />
         <activity
             android:name=".Edit_card_info"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".calculator"
             android:exported="true" />
