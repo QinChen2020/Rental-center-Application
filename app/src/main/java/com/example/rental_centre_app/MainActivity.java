@@ -15,7 +15,6 @@ import com.example.rental_centre_app.adapter.RecentsAdapter;
 import com.example.rental_centre_app.adapter.TopHouseAdapter;
 import com.example.rental_centre_app.model.RecentsData;
 import com.example.rental_centre_app.model.TopHouseData;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView profile;
     private ImageView key;
     private Button buttonc;
+    private Button buttonp;
 
 
     @Override
@@ -77,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Calculator.class);
+                startActivity(intent);
+            }
+        });
+        buttonp = findViewById(R.id.buttonp);
+        buttonp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CMainActivity.class);
                 startActivity(intent);
             }
         });

@@ -13,6 +13,7 @@
         android:layout_height="96dp"
         android:background="@drawable/home_bg"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -53,6 +54,18 @@
             app:layout_constraintTop_toTopOf="@+id/textView"
             app:layout_constraintVertical_bias="0.914"
             app:srcCompat="@drawable/profile" />
+
+        <Button
+            android:id="@+id/buttonp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="11dp"
+            android:text="Feedback"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -139,8 +152,8 @@
 
         <Button
             android:id="@+id/buttonc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Rent calculator" />
 

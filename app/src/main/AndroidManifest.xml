@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RentalCentreAPP">
         <activity
+            android:name=".CMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".Calculator"
             android:exported="true" />
         <activity
