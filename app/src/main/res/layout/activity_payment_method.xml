@@ -147,10 +147,10 @@
         android:id="@+id/pay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PAY"
-        android:textSize="25dp"
         android:layout_below="@+id/question_mark"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="PAY"
+        android:textSize="25dp" />
 
 
 </RelativeLayout>
