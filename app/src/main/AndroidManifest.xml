@@ -22,7 +22,10 @@
             android:name=".CMainActivity"
             android:exported="true" />
         <activity
-            android:name=".Calculator"
+            android:name=".SetPayPal"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentDetails"
             android:exported="true" />
         <activity
             android:name=".Order"
