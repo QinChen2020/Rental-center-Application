@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RentalCentreAPP">
         <activity
+            android:name=".SetPayPal"
+            android:exported="true" />
+        <activity
             android:name=".PaymentDetails"
             android:exported="true" />
         <activity

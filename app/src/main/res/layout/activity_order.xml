@@ -44,7 +44,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/line"
         android:layout_marginTop="10dp"
-        android:textStyle="italic"/>
+        android:textStyle="italic"
+        android:visibility="invisible"/>
 
     <RelativeLayout
         android:id="@+id/order_1"
@@ -54,16 +55,16 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
-        android:background="#f2e5ff"
-        android:visibility="invisible">
+        android:background="#f2e5ff">
 
         <TextView
             android:id="@+id/order_NO_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:hint="order number"
-            android:textSize="20dp" />
+            android:text="2992270001"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/house_name_1"
@@ -72,7 +73,7 @@
             android:layout_below="@+id/order_NO_1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:hint="house name"
+            android:text="New Brighton, 2 bedrooms"
             android:textSize="20dp" />
 
         <TextView
@@ -82,7 +83,7 @@
             android:layout_below="@+id/house_name_1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:hint="house adress"
+            android:text="New Brighton"
             android:textSize="20dp" />
 
         <TextView
@@ -92,7 +93,17 @@
             android:layout_below="@+id/order_address_1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:hint="date"
+            android:text="date"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/house_name_1"
+            android:layout_marginLeft="250dp"
+            android:layout_toRightOf="@+id/book_date_1"
+            android:text="view"
             android:textSize="20dp" />
 
     </RelativeLayout>
@@ -146,6 +157,16 @@
             android:hint="date"
             android:textSize="20dp" />
 
+        <Button
+            android:id="@+id/btn_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/house_name_2"
+            android:layout_marginLeft="250dp"
+            android:layout_toRightOf="@+id/book_date_2"
+            android:text="view"
+            android:textSize="20dp" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -197,6 +218,16 @@
             android:hint="date"
             android:textSize="20dp" />
 
+        <Button
+            android:id="@+id/btn_view_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/house_name_3"
+            android:layout_marginLeft="250dp"
+            android:layout_toRightOf="@+id/book_date_3"
+            android:text="view"
+            android:textSize="20dp" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -246,6 +277,16 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:hint="date"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_view_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/house_name_4"
+            android:layout_marginLeft="250dp"
+            android:layout_toRightOf="@+id/book_date_4"
+            android:text="view"
             android:textSize="20dp" />
 
     </RelativeLayout>
