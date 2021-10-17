@@ -1,10 +1,7 @@
 package com.example.rental_centre_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -12,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -84,6 +85,8 @@ public class CMainActivity extends AppCompatActivity {
                             recyclerView.setAdapter(adapter);
                             //Dismiss dialog
                             dialog.dismiss();
+                            Intent intent = new Intent(CMainActivity.this, MainActivity.class);
+                            startActivity(intent);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
