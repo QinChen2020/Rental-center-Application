@@ -51,12 +51,12 @@
         android:id="@+id/first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
         android:text="First name"
         android:textSize="20dp"
-        android:layout_below="@+id/line"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:textStyle="italic"/>
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/edit_fn"
@@ -66,8 +66,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:hint=" Enter first name"
-        android:textSize="22dp"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textSize="22dp" />
 
     <TextView
         android:id="@+id/surname"
@@ -88,19 +88,19 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:hint=" Enter surname"
-        android:textSize="22dp"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textSize="22dp" />
 
     <TextView
         android:id="@+id/gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_sn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
         android:text="Gender"
         android:textSize="20dp"
-        android:layout_below="@+id/edit_sn"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:textStyle="italic"/>
+        android:textStyle="italic" />
 
     <RadioGroup
         android:id="@+id/edit_gender"

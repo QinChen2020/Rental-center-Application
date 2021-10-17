@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,6 +25,7 @@ public class Profile extends AppCompatActivity {
     private Button payment;
     private Button order;
     private TextView name;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,19 +37,55 @@ public class Profile extends AppCompatActivity {
         order = (Button)findViewById(R.id.btn_order);
         name = findViewById(R.id.p_username);
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("754463323").child("Profile").child("PersonalInfo").child("FirstName");
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user = auth.getCurrentUser();
 
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                name.setText(snapshot.getValue().toString());
-            }
+        switch (user.getEmail()) {
+            case "754463323@qq.com":
+                DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("754463323").child("Profile").child("PersonalInfo").child("FirstName");
+                reference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        name.setText(snapshot.getValue().toString());
+                    }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
+                    }
+                });
+                break;
+            case "joychen299227@gmail.com":
+                DatabaseReference reference2 = FirebaseDatabase.getInstance().getReference().child("299227").child("Profile").child("PersonalInfo").child("FirstName");
+                reference2.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        name.setText(snapshot.getValue().toString());
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+                break;
+            case "gyh8771@autuni.ac.nz":
+                DatabaseReference reference3 = FirebaseDatabase.getInstance().getReference().child("gyh8771").child("Profile").child("PersonalInfo").child("FirstName");
+                reference3.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        name.setText(snapshot.getValue().toString());
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+                break;
+        }
+
+
 
         setListeners();
     }

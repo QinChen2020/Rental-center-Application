@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_edit_personal_info.xml" value="0.14447463768115942" />
+        <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_add_new_card.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_details.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_edit_card_info.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_edit_personal_info.xml" value="0.176" />
         <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_login_page.xml" value="0.14447463768115942" />
         <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_main_page.xml" value="0.25885416666666666" />
-        <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_order.xml" value="0.2552083333333333" />
-        <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_payment_details.xml" value="0.24427083333333333" />
         <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_payment_method.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/joych/Documents/GitHub/Rental-center-Application/app/src/main/res/layout/activity_profile.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/drawable-v24/book_button_bg.xml" value="0.10092592592592593" />
@@ -15,13 +16,8 @@
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/drawable/search_bg.xml" value="0.1" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/font/roboto_bold.xml" value="0.2296875" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/font/roboto_medium.xml" value="0.1" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/font/rubik.xml" value="0.1" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_calculator.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_cmain.xml" value="0.12182971014492754" />
+        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_calculator.xml" value="0.16394927536231885" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_details.xml" value="0.22" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_edit_card_info.xml" value="0.1" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_edit_personal_info.xml" value="0.1" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_login_page.xml" value="0.1" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -31,13 +27,11 @@
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_profile.xml" value="0.15353260869565216" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_register.xml" value="0.15353260869565216" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/activity_register_successful.xml" value="0.15353260869565216" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/dialog.xml" value="0.12182971014492754" />
-        <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/item_cmain.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/recents_row_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/qinch/AndroidStudioProjects/RentalCentreAPP/app/src/main/res/layout/top_house_row_item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_edit_personal_info.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_edit_personal_info.xml" value="0.16542047907705437" />
+        <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.156380706984478" />
         <entry key="app/src/main/res/layout/activity_main_page.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_payment.xml" value="0.1" />
