@@ -26,6 +26,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -44,12 +48,15 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     //noinspection GradleCompatible,GradleCompatible
     testImplementation 'com.android.support.test:runner:1.0.2'
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
 
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha01'
     androidTestImplementation 'androidx.test:rules:1.4.1-alpha01'
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.0-alpha01'
+    androidTestImplementation 'androidx.arch.core:core-testing:2.1.0'
+
 
 
 }

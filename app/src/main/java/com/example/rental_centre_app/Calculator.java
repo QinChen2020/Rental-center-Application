@@ -135,24 +135,26 @@ public class Calculator extends AppCompatActivity  implements View.OnClickListen
                 }
                 break;
             case R.id.btn_a:
-                getresult();
+                getresult(null);
                 break;
         }
     }
-    private void getresult()
-    {  String exp=et_input.getText().toString();
+    public int getresult(String exp)
+    {
+        if (exp == null) exp=et_input.getText().toString();
+
         if(exp==null||exp.equals(""))
         {
-            return;
+            return 0;
         }
         if(!exp.contains(" "))
         {
-            return;
+            return 0;
         }
         if(clear_flag)
         {
             clear_flag=false;
-            return;
+            return 0;
         }
         clear_flag=true;
         double result=0;
@@ -176,13 +178,13 @@ public class Calculator extends AppCompatActivity  implements View.OnClickListen
             }
             if(!s1.contains(".")&&!s2.contains(".")&&!op.equals("÷")){
                 int r = (int)result;
-                et_input.setText(r + "");
+                if (et_input != null) et_input.setText(r + "");
             }
             else
-            {et_input.setText(result + "");}
+            {if (et_input != null) et_input.setText(result + "");}
         }else if(!s1.equals("")&&s2.equals(""))
         {
-            et_input.setText(exp);
+            if (et_input != null) et_input.setText(exp);
         }else if(s1.equals("")&&!s2.equals(""))
         {   double d2= Double.parseDouble(s2);
             if (op.equals("+")) {
@@ -196,7 +198,8 @@ public class Calculator extends AppCompatActivity  implements View.OnClickListen
             }
         }
         else {
-            et_input.setText("");
+            if (et_input != null) et_input.setText("");
         }
+        return (int) result;
     }
 }
