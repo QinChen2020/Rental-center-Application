@@ -23,11 +23,8 @@ public class Order extends AppCompatActivity {
         btn_back = findViewById(R.id.btn_back);
         btn_next = findViewById(R.id.btn_next);
         book_date_1 = findViewById(R.id.book_date_1);
-        view_1 = findViewById(R.id.btn_view_1);
-        write_review_1 = findViewById(R.id.review_1);
-        write_review_2 = findViewById(R.id.review_2);
-        write_review_3 = findViewById(R.id.review_3);
-        write_review_4 = findViewById(R.id.review_4);
+        view_1 = (Button)findViewById(R.id.btn_view_1);
+        write_review_1 = (Button) findViewById(R.id.review_1);
 
         setListeners();
     }
@@ -39,9 +36,7 @@ public class Order extends AppCompatActivity {
         btn_next.setOnClickListener(onclick);
         view_1.setOnClickListener(onclick);
         write_review_1.setOnClickListener(onclick);
-        write_review_2.setOnClickListener(onclick);
-        write_review_3.setOnClickListener(onclick);
-        write_review_4.setOnClickListener(onclick);
+
     }
 
     public void setOrderDate(String date){
@@ -67,6 +62,7 @@ public class Order extends AppCompatActivity {
                     startActivity(intent);
                     break;
             }
+
 
         }
     }

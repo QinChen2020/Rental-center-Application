@@ -67,10 +67,9 @@
             android:layout_below="@+id/score_hint"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:isIndicator="true"
             android:numStars="5"
             android:rating="5"
-            android:stepSize="1" />
+            android:stepSize="0.5" />
 
     </RelativeLayout>
 
@@ -120,7 +119,7 @@
             android:textSize="20dp"/>
 
         <Button
-            android:id="@+id/btn_sumit"
+            android:id="@+id/btn_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
