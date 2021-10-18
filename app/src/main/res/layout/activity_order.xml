@@ -22,7 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_title"
-        android:layout_marginLeft="250dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
         android:text="return"
         android:textSize="20dp" />
@@ -31,9 +32,9 @@
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#000000"
         android:layout_below="@+id/btn_return"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
 
     <TextView
         android:id="@+id/no_order"
@@ -64,7 +65,7 @@
             android:layout_marginLeft="10dp"
             android:text="2992270001"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/house_name_1"
@@ -99,11 +100,24 @@
         <Button
             android:id="@+id/btn_view_1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/house_name_1"
-            android:layout_marginLeft="250dp"
-            android:layout_toRightOf="@+id/book_date_1"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffe5"
             android:text="view"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/review_1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/house_name_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffe5"
+            android:text="Write a review"
             android:textSize="20dp" />
 
     </RelativeLayout>
@@ -117,7 +131,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         android:background="#f2e5ff"
-        android:visibility="invisible">
+        >
 
         <TextView
             android:id="@+id/order_NO_2"
@@ -160,11 +174,25 @@
         <Button
             android:id="@+id/btn_view_2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/house_name_2"
-            android:layout_marginLeft="250dp"
-            android:layout_toRightOf="@+id/book_date_2"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffe5"
             android:text="view"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/review_2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/house_name_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffe5"
+            android:text="Write a review"
             android:textSize="20dp" />
 
     </RelativeLayout>
@@ -178,7 +206,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         android:background="#f2e5ff"
-        android:visibility="invisible">
+        >
 
         <TextView
             android:id="@+id/order_NO_3"
@@ -221,11 +249,25 @@
         <Button
             android:id="@+id/btn_view_3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/house_name_3"
-            android:layout_marginLeft="250dp"
-            android:layout_toRightOf="@+id/book_date_3"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffe5"
             android:text="view"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/review_3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/house_name_3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffe5"
+            android:text="Write a review"
             android:textSize="20dp" />
 
     </RelativeLayout>
@@ -239,7 +281,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         android:background="#f2e5ff"
-        android:visibility="invisible">
+        >
 
         <TextView
             android:id="@+id/order_NO_4"
@@ -282,11 +324,25 @@
         <Button
             android:id="@+id/btn_view_4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/house_name_4"
-            android:layout_marginLeft="250dp"
-            android:layout_toRightOf="@+id/book_date_4"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffe5"
             android:text="view"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/review_4"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/house_name_4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffe5"
+            android:text="Write a review"
             android:textSize="20dp" />
 
     </RelativeLayout>
@@ -296,9 +352,9 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/order_4"
-        android:layout_marginTop="36dp"
-        android:background="#dd99ff"
-        >
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:background="#dd99ff">
 
         <Button
             android:id="@+id/btn_back"
@@ -306,18 +362,16 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:text="back"
-            android:textSize="20dp"
-            android:visibility="invisible"/>
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="230dp"
-            android:layout_toRightOf="@+id/btn_back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
             android:text="next"
-            android:textSize="20dp"
-            android:visibility="invisible"/>
+            android:textSize="20dp" />
 
     </RelativeLayout>
 

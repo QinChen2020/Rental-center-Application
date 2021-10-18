@@ -58,6 +58,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
 
+        //extract data from firebase
         switch (user.getEmail()) {
             case "754463323@qq.com":
                 DatabaseReference P_reference = FirebaseDatabase.getInstance().getReference().child("754463323").child("Profile").child("PersonalInfo").child("FirstName");
