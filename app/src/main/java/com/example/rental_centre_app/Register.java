@@ -55,6 +55,8 @@ public class Register extends AppCompatActivity {
                 case R.id.register_button:
                     String txt_email = email.getText().toString();
                     String txt_password = password.getText().toString();
+
+                    //judge if user are following registration rules.
                     if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
                         Toast.makeText(Register.this,"Empty credentials!", Toast.LENGTH_SHORT).show();
                     }else if (txt_password.length() < 6) {
@@ -89,6 +91,7 @@ public class Register extends AppCompatActivity {
 
         final FirebaseUser user = auth.getCurrentUser();
 
+        //sent email verification to user when register
         user.sendEmailVerification().addOnCompleteListener(Register.this, new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

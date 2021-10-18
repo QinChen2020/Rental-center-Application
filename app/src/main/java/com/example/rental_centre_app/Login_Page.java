@@ -60,6 +60,7 @@ public class Login_Page extends AppCompatActivity {
         }
     }
 
+    //login with email and password
     private void loginUser(String email, String password) {
         auth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
