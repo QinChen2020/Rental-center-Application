@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 
@@ -22,11 +23,14 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Register extends AppCompatActivity {
 
+    private String realCode;
     private Button register;
     private Button return_button;
     private EditText email;
     private EditText password;
     private FirebaseAuth auth;
+    private EditText mEtRegisteractivityPhonecodes;
+    private ImageView mIvRegisteractivityShowcode;
 
 
     @Override
@@ -39,6 +43,14 @@ public class Register extends AppCompatActivity {
         password = findViewById(R.id.editText_password);
         auth = FirebaseAuth.getInstance();
         setListeners();
+        initView();
+        mIvRegisteractivityShowcode.setImageBitmap(Code.getInstance().createBitmap());
+        realCode = Code.getInstance().getCode().toLowerCase();
+    }
+
+    private void initView(){
+        mEtRegisteractivityPhonecodes = findViewById(R.id.et_registeractivity_phoneCodes);
+        mIvRegisteractivityShowcode = findViewById(R.id.iv_registeractivity_showCode);
     }
     private void setListeners(){
         Onclick onclick = new Onclick();
@@ -55,8 +67,7 @@ public class Register extends AppCompatActivity {
                 case R.id.register_button:
                     String txt_email = email.getText().toString();
                     String txt_password = password.getText().toString();
-
-                    //judge if user are following registration rules.
+                    String phoneCode = mEtRegisteractivityPhonecodes.getText().toString().toLowerCase();
                     if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
                         Toast.makeText(Register.this,"Empty credentials!", Toast.LENGTH_SHORT).show();
                     }else if (txt_password.length() < 6) {
@@ -68,6 +79,12 @@ public class Register extends AppCompatActivity {
                         startActivity(intent);
                     }
                     break;
+
+                case R.id.iv_registeractivity_showCode:
+                    mIvRegisteractivityShowcode.setImageBitmap(Code.getInstance().createBitmap());
+                    realCode = Code.getInstance().getCode().toLowerCase();
+                    break;
+
                 case R.id.return_button:
                     intent = new Intent(Register.this, MainPageActivity.class);
                     startActivity(intent);
@@ -91,7 +108,6 @@ public class Register extends AppCompatActivity {
 
         final FirebaseUser user = auth.getCurrentUser();
 
-        //sent email verification to user when register
         user.sendEmailVerification().addOnCompleteListener(Register.this, new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
