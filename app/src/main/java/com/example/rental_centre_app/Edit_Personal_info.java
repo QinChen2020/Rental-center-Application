@@ -1,19 +1,18 @@
 package com.example.rental_centre_app;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -55,6 +54,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         rd_female = findViewById(R.id.female);
 
 
+        //connect to Firebase
         auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
 
@@ -304,6 +304,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         setListeners();
     }
 
+    //set listeners for components
     private void setListeners() {
         Onclick onclick = new Onclick();
         birthday.setOnClickListener(onclick);
@@ -311,6 +312,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         save_button.setOnClickListener(onclick);
     }
 
+    //check if the email address user input is correct format
     private boolean isEmail(String email){
         String str = "^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
         Pattern p = Pattern.compile(str);
@@ -318,6 +320,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         return m.matches();
     }
 
+    //check if the mobile number user input is correct format
     private boolean isMobile(String phoneNo){
         if(phoneNo.length()==10){
             return true;
@@ -326,6 +329,7 @@ public class Edit_Personal_info extends AppCompatActivity {
         }
     }
 
+    //set onclicklisteners
     private class Onclick implements View.OnClickListener {
         Intent intent = null;
         Calendar calendar = Calendar.getInstance();

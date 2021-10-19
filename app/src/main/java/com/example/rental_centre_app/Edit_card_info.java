@@ -1,11 +1,11 @@
 package com.example.rental_centre_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Edit_card_info extends AppCompatActivity {
 
@@ -21,6 +21,7 @@ public class Edit_card_info extends AppCompatActivity {
         setListeners();
     }
 
+    //set listeners for components
     private void setListeners(){
         Onclick onclick = new Onclick();
         existing.setOnClickListener(onclick);
@@ -28,6 +29,7 @@ public class Edit_card_info extends AppCompatActivity {
         back.setOnClickListener(onclick);
     }
 
+    //set click events
     private class Onclick implements View.OnClickListener{
 
         Intent intent = null;
