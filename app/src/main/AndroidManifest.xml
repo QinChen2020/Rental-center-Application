@@ -40,7 +40,7 @@
             android:name=".Edit_card_info"
             android:exported="true" />
         <activity
-            android:name=".calculator"
+            android:name=".Calculator"
             android:exported="true" />
         <activity
             android:name=".Profile"
