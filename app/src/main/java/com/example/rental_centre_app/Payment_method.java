@@ -45,6 +45,7 @@ public class Payment_method extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = null;
             switch (view.getId()){
+                //if case question_mark, show toast below
                 case R.id.question_mark:
                     Toast toast = Toast.makeText(Payment_method.this,"The CVV code is a 3 digit code that we ask you to enter. It adds and extra level of security to your payment.", Toast.LENGTH_LONG);
                     toast.setGravity(Gravity.CENTER, 0, 0);

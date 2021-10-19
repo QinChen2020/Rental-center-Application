@@ -1,13 +1,13 @@
 package com.example.rental_centre_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Add_new_card extends AppCompatActivity {
 
@@ -22,6 +22,7 @@ public class Add_new_card extends AppCompatActivity {
         setListeners();
     }
 
+    // set listeners for components
     private void setListeners(){
         Onclick onclick = new Onclick();
         back.setOnClickListener(onclick);
@@ -29,6 +30,7 @@ public class Add_new_card extends AppCompatActivity {
         question_mark.setOnClickListener(onclick);
     }
 
+    //set click events
     private class Onclick implements View.OnClickListener{
         Intent intent = null;
         Toast toast;

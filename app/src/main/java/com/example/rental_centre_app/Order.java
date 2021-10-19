@@ -49,14 +49,17 @@ public class Order extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = null;
             switch (view.getId()){
+                //if case btn_return, jump to Profile
                 case R.id.btn_return:
                     intent = new Intent(Order.this, Profile.class);
                     startActivity(intent);
                     break;
+                    //if case btn_view_1, jump to DetailsActivity
                 case R.id.btn_view_1:
                     intent = new Intent(Order.this, DetailsActivity.class);
                     startActivity(intent);
                     break;
+                    //if case review_1, jump to Write_Review_Activity
                 case R.id.review_1:
                     intent = new Intent(Order.this, Write_Review_Activity.class);
                     startActivity(intent);
